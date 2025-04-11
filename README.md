@@ -22,7 +22,7 @@ A script to install Supabase in a Proxmox container.
 
 1. Download the installation script:
 ```bash
-wget -O supabase-install.sh https://raw.githubusercontent.com/hackn-net/supabase.for.proxmox/main/supabase-install.sh
+wget -O supabase-install.sh https://raw.githubusercontent.com/rolltidehero/supabase.for.proxmox/main/supabase-install.sh
 ```
 
 2. Make it executable:
