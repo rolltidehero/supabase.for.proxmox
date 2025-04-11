@@ -22,7 +22,7 @@ A script to install Supabase in a Proxmox container.
 
 1. Download the installation script:
 ```bash
-wget -O supabase-install.sh https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/install/supabase-install.sh
+wget -O supabase-install.sh https://raw.githubusercontent.com/hackn-net/supabase.for.proxmox/main/supabase-install.sh
 ```
 
 2. Make it executable:
@@ -46,7 +46,7 @@ You can customize the installation with the following options:
 Available options:
 
 - `--postgres-password`: Set PostgreSQL password (default: random)
-- `--domain`: Set domain name (default: localhost)
+- `--domain`: Set domain name (default: hackn.net)
 - `--port`: Set port number (default: 3000)
 - `--data-dir`: Set data directory (default: /opt/supabase)
 - `--pgadmin-email`: Set pgAdmin email (default: admin@example.com)
@@ -68,9 +68,9 @@ systemctl status supabase
 ```
 
 Access Supabase at:
-- Supabase Studio: http://your-domain-or-ip:3000
-- PostgreSQL: your-domain-or-ip:5432
-- pgAdmin: http://your-domain-or-ip:5050
+- Supabase Studio: http://hackn.net:3000
+- PostgreSQL: hackn.net:5432
+- pgAdmin: http://hackn.net:5050
 
 ## Backup and Restore
 

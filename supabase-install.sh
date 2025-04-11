@@ -10,7 +10,7 @@ POSTGRES_PASSWORD=$(openssl rand -base64 32)
 JWT_SECRET=$(openssl rand -base64 32)
 ANON_KEY=$(openssl rand -base64 32)
 SERVICE_ROLE_KEY=$(openssl rand -base64 32)
-DOMAIN="localhost"
+DOMAIN="hackn.net"
 PORT=3000
 PGADMIN_EMAIL="admin@example.com"
 PGADMIN_PASSWORD=$(openssl rand -base64 16)
@@ -21,7 +21,7 @@ print_usage() {
   echo "Usage: bash supabase-install.sh [options]"
   echo "Options:"
   echo "  --postgres-password   Set PostgreSQL password (default: random)"
-  echo "  --domain              Set domain name (default: localhost)"
+  echo "  --domain              Set domain name (default: hackn.net)"
   echo "  --port                Set port number (default: 3000)"
   echo "  --data-dir            Set data directory (default: /opt/supabase)"
   echo "  --pgadmin-email       Set pgAdmin email (default: admin@example.com)"
