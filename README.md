@@ -21,16 +21,19 @@ A script to install Supabase in a Proxmox container.
 ## Installation
 
 1. Download the installation script:
+
 ```bash
 wget -O supabase-install.sh https://raw.githubusercontent.com/rolltidehero/supabase.for.proxmox/main/supabase-install.sh
 ```
 
 2. Make it executable:
+
 ```bash
 chmod +x supabase-install.sh
 ```
 
 3. Run the script:
+
 ```bash
 ./supabase-install.sh
 ```
@@ -68,6 +71,7 @@ systemctl status supabase
 ```
 
 Access Supabase at:
+
 - Supabase Studio: http://hackn.net:3000
 - PostgreSQL: hackn.net:5432
 - pgAdmin: http://hackn.net:5050
@@ -77,22 +81,27 @@ Access Supabase at:
 All data is stored in the data directory (default: /opt/supabase). To backup your Supabase installation:
 
 1. Stop the service:
+
 ```bash
 systemctl stop supabase
 ```
 
 2. Backup the data directory:
+
 ```bash
 tar -czvf supabase-backup.tar.gz /opt/supabase
 ```
 
 To restore:
+
 1. Extract the backup:
+
 ```bash
 tar -xzvf supabase-backup.tar.gz -C /
 ```
 
 2. Start the service:
+
 ```bash
 systemctl start supabase
 ```
@@ -102,16 +111,19 @@ systemctl start supabase
 If you experience issues:
 
 1. Check service status:
+
 ```bash
 systemctl status supabase
 ```
 
 2. View container logs:
+
 ```bash
 cd /opt/supabase && docker-compose logs
 ```
 
 3. Check individual service:
+
 ```bash
 cd /opt/supabase && docker-compose logs [service-name]
 ```
